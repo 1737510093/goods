@@ -1,0 +1,11 @@
+body{
+    background:lavender;
+    font-size: 18px;
+}
+h1{
+    color: blueviolet;
+    &:hover{
+        color: red;
+        font-style: italic;
+    }
+}
