@@ -21,11 +21,11 @@ define(["jquery"],function($){
 			const txt = $(this).text();
 			$(".index_search").val(txt);
 			$(".show_search").hide();
-		})
+		});
 		
 		//导航栏下拉列表
 		$(".allMenu li").hover(function(){
 			$(this).find($(".menu_list")).slideToggle("fast");
-		})
-	})
+		});
+	});
 });

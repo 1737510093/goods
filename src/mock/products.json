@@ -3,11 +3,14 @@
 	"res_error":"",
 	"res_body": {
 		"list" : [
-			[
-				{"img":"../images/m1.jpg", "title":"parum clari", "desc":"Duis autem vel eum iriure", "price":"399"},
-				{"img":"../images/m2.jpg", "title":"parum clari", "desc":"Duis autem vel eum iriure", "price":"399"},
-				{"img":"../images/m3.jpg", "title":"parum clari", "desc":"Duis autem vel eum iriure", "price":"399"}
-			]
+				{"img":"img/tctg1.jpg", "title":"八睿商城 新昊森林 野生蓝莓汁 420ml  豪...", "delprice":"180.00", "price":"150.00"},
+				{"img":"img/tctg2.jpg", "title":"八睿商城 新昊森林 野生蓝莓汁 300ml  豪...", "delprice":"84.00", "price":"70.00"},
+				{"img":"img/tctg3.jpg", "title":"八睿商城 新昊森林 野生蓝莓干红（干型）730m...", "delprice":"384.00", "price":"320.00"},
+				{"img":"img/tctg4.jpg", "title":"八睿商城 新昊森林 山珍特产 野生蓝莓果干（果葡...", "delprice":"150.00", "price":"125.00"},
+				{"img":"img/tctg5.jpg", "title":"八睿商城 新昊森林  山珍特产8 野生蓝莓果干（...", "delprice":"105.00", "price":"88.00"},
+				{"img":"img/tctg6.jpg", "title":"八睿商城 新昊森林  山珍特产野生蓝莓果干（蜂蜜...", "delprice":"54.00", "price":"45.00"},
+				{"img":"img/tctg7.jpg", "title":"八睿商城 新昊森林  山珍特产野生蓝莓果干（白砂...", "delprice":"180.00", "price":"150.00"},
+				{"img":"img/tctg8.jpg", "title":"八睿商城 新昊森林  山珍特产野生蓝莓果干 办公...", "delprice":"360.00", "price":"300.00"}
 		]
 	}
 }		

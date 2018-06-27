@@ -1,0 +1,18 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				[
+				{"img":"img/jxhd_banner.jpg"},
+				{"img":"img/jxhd1.jpg"},
+				{"img":"img/jxhd2.jpg"}	
+				],
+				[
+				{"img":"img/chlj1.jpg"},
+				{"img":"img/chlj2.jpg"},
+				{"img":"img/chlj3.jpg"}		
+				]
+		]
+	}
+}

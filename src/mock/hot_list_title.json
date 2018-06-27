@@ -1,0 +1,19 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"title":"酱辣子"},
+				{"title":"松花皮蛋"},
+				{"title":"牛肉干"},
+				{"title":"西乡面皮"},
+				{"title":"豆腐乳"},
+				{"title":"浆水菜"},
+				{"title":"西乡腊肉"},
+				{"title":"蜂蜜"}
+				
+				
+		]
+	}
+}
+

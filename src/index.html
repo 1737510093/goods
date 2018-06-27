@@ -106,28 +106,30 @@
 	
 	<!--精选活动-->
 	<div class="jxhd">
-		<p class="title"></p>
-		<div class="jxhd_content">
-			<a href="#"><img src="img/jxhd_banner.jpg" /></a>
-			<a href="#"><img src="img/jxhd1.jpg" /></a>
-			<a href="#"><img src="img/jxhd2.jpg" /></a>
-		</div>
+		
 	</div>
+	<script type="text/html" id="jxhd_temp">
+		{{each list products}}
+			<p class="title"></p>
+			<div class="jxhd_content">
+			{{each products prod index}}
+			<a href="#"><img src="{{prod.img}}" /></a>
+			{{/each}}
+		</div>
+		{{/each}}
+	</script>
 	<!--吃货力荐-->
-	<div class="chlj">
-		<p class="title"></p>
-		<div class="chlj_content">
-			<a href="#"><img src="img/chlj1.jpg" /></a>
-			<a href="#"><img src="img/chlj2.jpg" /></a>
-			<a href="#"><img src="img/chlj3.jpg" /></a>
-		</div>
-	</div>
+	
 	
 	<!--特产美食-->
 	<div class="banner_tc">
 		<a href="#"><img src="img/banner_tc.jpg"/></a>
 	</div>
+	
+	
+	
 	<!--1F-->
+	
 	<div class="tcms">
 		<div class="title_tc">
 			<h3>1F&nbsp;特产美食</h3>
@@ -139,16 +141,13 @@
 		<div class="hot_tc">
 			<div class="hot_tc_top">
 				<div class="hot_tc_top_list">
-					<a href="#">酱辣子</a>
-					<a href="#">松花皮蛋</a>
-					<a href="#">牛肉干</a>
-					<a href="#">西乡面皮</a>
-					<a href="#">豆腐乳</a>
-					<a href="#">浆水菜</a>
-					<a href="#">西乡腊肉</a>
-					<a href="#">蜂蜜</a>
-					<a href="#">核桃</a>
 				</div>
+				<script type="text/html" id="hot_list_title_temp">
+					{{each list curr}}
+					<a href="#">{{curr.title}}</a>
+					{{/each}}
+				</script>
+				
 			</div>
 			<div class="hot_tc_foot">
 				<a href="#">
@@ -156,101 +155,37 @@
 				</a>
 			</div>
 		</div>
-		<div class="product_tc">
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg1.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg2.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg3.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg4.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg5.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg6.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg7.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg8.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
+		<!--商品-->
+		<div class="product_tc" id="product_tc_one">	
 		</div>
+		<script type="text/html" id="product_list_temp">
+			{{each list prod}}
+				<div class="product_tc_list">
+					<a href="#">
+						<img src="{{prod.img}}" />
+					</a>
+					<p class="title"><a href="#">
+						{{prod.title}}
+					</a></p>
+					<p class="price_del">{{prod.delprice}}</p>
+					<p class="price">{{prod.price}}</p>
+					<span class="add_car"></span>
+				</div>
+			{{/each}}
+		</script>
+		
 		<div class="qiang_tc">
 			<a href="#"><img src="img/qianggou1.jpg" /></a>
 			<a href="#"><img src="img/qianggou2.jpg" /></a>
 		</div>
 	</div>
+
+	
+	
+	
+	
+	
+	
 	<!--2F-->
 	<div class="tcms">
 		<div class="title_tc">
@@ -262,17 +197,14 @@
 		</div>
 		<div class="hot_tc">
 			<div class="hot_tc_top">
-				<div class="hot_tc_top_list">
-					<a href="#">酱辣子</a>
-					<a href="#">松花皮蛋</a>
-					<a href="#">牛肉干</a>
-					<a href="#">西乡面皮</a>
-					<a href="#">豆腐乳</a>
-					<a href="#">浆水菜</a>
-					<a href="#">西乡腊肉</a>
-					<a href="#">蜂蜜</a>
-					<a href="#">核桃</a>
+				<div class="hot_tc_top_list" id="hot_tc_top_list">
 				</div>
+				<script type="text/html" id="hot_list_title_temp">
+					{{each list curr}}
+					<a href="#">{{curr.title}}</a>
+					{{/each}}
+				</script>
+				
 			</div>
 			<div class="hot_tc_foot">
 				<a href="#">
@@ -280,96 +212,25 @@
 				</a>
 			</div>
 		</div>
-		<div class="product_tc">
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg1.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg2.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg3.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg4.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg5.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg6.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg7.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg8.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
+		<!--商品-->
+		<div class="product_tc" id="product_tc_one">	
 		</div>
+		<script type="text/html" id="product_list_temp">
+			{{each list prod}}
+				<div class="product_tc_list">
+					<a href="#">
+						<img src="{{prod.img}}" />
+					</a>
+					<p class="title"><a href="#">
+						{{prod.title}}
+					</a></p>
+					<p class="price_del">{{prod.delprice}}</p>
+					<p class="price">{{prod.price}}</p>
+					<span class="add_car"></span>
+				</div>
+			{{/each}}
+		</script>
+		
 		<div class="qiang_tc">
 			<a href="#"><img src="img/qianggou1.jpg" /></a>
 			<a href="#"><img src="img/qianggou2.jpg" /></a>
@@ -386,17 +247,14 @@
 		</div>
 		<div class="hot_tc">
 			<div class="hot_tc_top">
-				<div class="hot_tc_top_list">
-					<a href="#">酱辣子</a>
-					<a href="#">松花皮蛋</a>
-					<a href="#">牛肉干</a>
-					<a href="#">西乡面皮</a>
-					<a href="#">豆腐乳</a>
-					<a href="#">浆水菜</a>
-					<a href="#">西乡腊肉</a>
-					<a href="#">蜂蜜</a>
-					<a href="#">核桃</a>
+				<div class="hot_tc_top_list" id="hot_tc_top_list">
 				</div>
+				<script type="text/html" id="hot_list_title_temp">
+					{{each list curr}}
+					<a href="#">{{curr.title}}</a>
+					{{/each}}
+				</script>
+				
 			</div>
 			<div class="hot_tc_foot">
 				<a href="#">
@@ -404,96 +262,25 @@
 				</a>
 			</div>
 		</div>
-		<div class="product_tc">
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg1.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg2.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg3.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg4.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg5.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg6.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg7.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg8.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
+		<!--商品-->
+		<div class="product_tc" id="product_tc_one">	
 		</div>
+		<script type="text/html" id="product_list_temp">
+			{{each list prod}}
+				<div class="product_tc_list">
+					<a href="#">
+						<img src="{{prod.img}}" />
+					</a>
+					<p class="title"><a href="#">
+						{{prod.title}}
+					</a></p>
+					<p class="price_del">{{prod.delprice}}</p>
+					<p class="price">{{prod.price}}</p>
+					<span class="add_car"></span>
+				</div>
+			{{/each}}
+		</script>
+		
 		<div class="qiang_tc">
 			<a href="#"><img src="img/qianggou1.jpg" /></a>
 			<a href="#"><img src="img/qianggou2.jpg" /></a>
@@ -510,17 +297,14 @@
 		</div>
 		<div class="hot_tc">
 			<div class="hot_tc_top">
-				<div class="hot_tc_top_list">
-					<a href="#">酱辣子</a>
-					<a href="#">松花皮蛋</a>
-					<a href="#">牛肉干</a>
-					<a href="#">西乡面皮</a>
-					<a href="#">豆腐乳</a>
-					<a href="#">浆水菜</a>
-					<a href="#">西乡腊肉</a>
-					<a href="#">蜂蜜</a>
-					<a href="#">核桃</a>
+				<div class="hot_tc_top_list" id="hot_tc_top_list">
 				</div>
+				<script type="text/html" id="hot_list_title_temp">
+					{{each list curr}}
+					<a href="#">{{curr.title}}</a>
+					{{/each}}
+				</script>
+				
 			</div>
 			<div class="hot_tc_foot">
 				<a href="#">
@@ -528,96 +312,25 @@
 				</a>
 			</div>
 		</div>
-		<div class="product_tc">
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg1.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg2.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg3.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg4.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg5.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg6.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg7.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg8.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
+		<!--商品-->
+		<div class="product_tc" id="product_tc_one">	
 		</div>
+		<script type="text/html" id="product_list_temp">
+			{{each list prod}}
+				<div class="product_tc_list">
+					<a href="#">
+						<img src="{{prod.img}}" />
+					</a>
+					<p class="title"><a href="#">
+						{{prod.title}}
+					</a></p>
+					<p class="price_del">{{prod.delprice}}</p>
+					<p class="price">{{prod.price}}</p>
+					<span class="add_car"></span>
+				</div>
+			{{/each}}
+		</script>
+		
 		<div class="qiang_tc">
 			<a href="#"><img src="img/qianggou1.jpg" /></a>
 			<a href="#"><img src="img/qianggou2.jpg" /></a>
@@ -634,17 +347,14 @@
 		</div>
 		<div class="hot_tc">
 			<div class="hot_tc_top">
-				<div class="hot_tc_top_list">
-					<a href="#">酱辣子</a>
-					<a href="#">松花皮蛋</a>
-					<a href="#">牛肉干</a>
-					<a href="#">西乡面皮</a>
-					<a href="#">豆腐乳</a>
-					<a href="#">浆水菜</a>
-					<a href="#">西乡腊肉</a>
-					<a href="#">蜂蜜</a>
-					<a href="#">核桃</a>
+				<div class="hot_tc_top_list" id="hot_tc_top_list">
 				</div>
+				<script type="text/html" id="hot_list_title_temp">
+					{{each list curr}}
+					<a href="#">{{curr.title}}</a>
+					{{/each}}
+				</script>
+				
 			</div>
 			<div class="hot_tc_foot">
 				<a href="#">
@@ -652,96 +362,25 @@
 				</a>
 			</div>
 		</div>
-		<div class="product_tc">
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg1.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg2.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg3.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg4.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg5.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg6.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg7.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
-			<div class="product_tc_list">
-				<a href="#">
-					<img src="img/tctg8.jpg" />
-				</a>
-				<p class="title"><a href="#">
-					八睿商城 新昊森林 野生蓝莓汁 420ml  豪...
-				</a></p>
-				<p class="price_del">180.00</p>
-				<p class="price">150.00</p>
-				<span class="add_car"></span>
-			</div>
+		<!--商品-->
+		<div class="product_tc" id="product_tc_one">	
 		</div>
+		<script type="text/html" id="product_list_temp">
+			{{each list prod}}
+				<div class="product_tc_list">
+					<a href="#">
+						<img src="{{prod.img}}" />
+					</a>
+					<p class="title"><a href="#">
+						{{prod.title}}
+					</a></p>
+					<p class="price_del">{{prod.delprice}}</p>
+					<p class="price">{{prod.price}}</p>
+					<span class="add_car"></span>
+				</div>
+			{{/each}}
+		</script>
+		
 		<div class="qiang_tc">
 			<a href="#"><img src="img/qianggou1.jpg" /></a>
 			<a href="#"><img src="img/qianggou2.jpg" /></a>
@@ -755,9 +394,12 @@
     	描述：尾部
     -->
 	<footer class="footer"></footer>
-	<script src="lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/artTemplate/template-web.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/requirejs/require.js" data-main ="js/index" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/artTemplate/unslider.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="lib/jquery/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<script src="lib/artTemplate/template-web.js" type="text/javascript"></script>
+	<script src="lib/requirejs/require.js" data-main ="js/index" type="text/javascript"></script>
+	<script src="lib/artTemplate/unslider.min.js" type="text/javascript" ></script>
+	<script src="lib/jquery-plugins/jquery.fly.min.js" type="text/javascript"></script>
+	
 </body>
 </html>
