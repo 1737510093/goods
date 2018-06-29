@@ -1,0 +1,17 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"img":"img/buy1.jpg", "title":"八睿商城 新昊森林  山珍野生 野生元蘑...", "delprice":"60.00", "price":"50.00"},
+				{"img":"img/buy2.jpg", "title":"八睿商城 新昊森林  山珍野生 野生猴头...", "delprice":"56.00", "price":"47.00"},
+				{"img":"img/buy3.jpg", "title":"八睿商城 新昊森林  山珍野生 野生秋木...", "delprice":"117.00", "price":"98.00"},
+				{"img":"img/buy4.jpg", "title":"八睿商城 新昊森林  山珍野生 野生榛蘑...", "delprice":"60.00", "price":"50.00"},
+				{"img":"img/buy5.jpg", "title":"八睿商城 新昊森林  山珍野生 野生榛蘑...", "delprice":"69.00", "price":"58.00"},
+				{"img":"img/buy6.jpg", "title":"八睿商城 新昊森林  山珍野生 野生元蘑...", "delprice":"52.00", "price":"44.00"},
+				{"img":"img/buy7.jpg", "title":"八睿商城 新昊森林  山珍野生 野生猴头...", "delprice":"56.00", "price":"47.00"},
+				{"img":"img/buy8.jpg", "title":"八睿商城 新昊森林  山珍野生 野生秋木...", "delprice":"64.00", "price":"55.00"}
+				
+		]
+	}
+}		

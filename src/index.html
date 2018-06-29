@@ -17,80 +17,7 @@
     -->
 	<header class="header"></header>
 	
-	<!--侧边栏-->
-	<div class="slide_nav">
-		<!--个人中心-->
-		<div class="head_mod">
-			<a href="#"><img src="img/user_head.png"/></a>
-			<div class="user_login">
-				<form name="formLogin" action="" method="post" >
-		            <h2><strong>请登录</strong><span>还没有账号？<a href="" class="right_register">立即注册</a></span></h2>
-					<span>账号：</span>
-					<input type="text" /><br />
-					<span>密码：</span>
-					<input type="password" />
-					<p>
-						<label for="remenber"><input id="remenber" type="checkbox" />记住密码 </label>
-						<a href="#">忘记密码？</a>
-					</p>
-					<input type="submit" value="立即登录" />
-		        </form>
-		        <em></em>
-		       
-			</div>
-		</div>
-		<!--在线销售-->
-		<div class="head_sale">
-			<span>&nbsp;在线<br/>&nbsp;销售</span>
-			<div class="ask_online">
-				<p>在线销售顾问</p>
-				<p><img src="img/qq1.gif" />八睿商城</p>
-				<em></em>
-			</div>
-		</div>
-		<!--在线调查-->
-		<div class="head_check">
-			<span class="hide"><br />&nbsp;调查</span>
-			<span class="show">&nbsp;在线<br/>&nbsp;调查</span>
-			<div class="ask_check">
-				<p>在线调查问卷</p>
-				<em></em>
-			</div>
-		</div>
-		<!--购物车-->
-		<div class="car">
-			<i></i>
-			购<br />物<br />车<br />
-			<span>0</span>
-			<div class="car_product">
-				<p>购物车空空什么都没有哦！</p>
-				<em></em>
-			</div>
-		</div>
-		<!--关注店铺-->
-		<div class="look_at">
-			<span class="show "><i></i>关注</span>
-			<span class="hide">关注<br />店铺</span>
-			<span></span>
-		</div>
-		<!--收藏商品-->
-		<div class="select">
-			<span class="show "><i></i>收藏</span>
-			<span class="hide">收藏<br />商品</span>
-			<span></span>
-		</div>
-		<!--官方微信-->
-		<div class="wexin">
-			<span class="show "><i></i></span>
-			<span class="hide">官方<br />微信</span>
-			<div class="erweima">
-				<i></i>
-				<p>扫描二维码，马上有礼！</p>
-				<em></em>
-			</div>
-		</div>
-	</div>
-	
+
 	<!--轮播图-->
 	<div class="banner" id="b04">
 		<ul>
@@ -126,267 +53,263 @@
 		<a href="#"><img src="img/banner_tc.jpg"/></a>
 	</div>
 	
-	
-	
-	<!--1F-->
-	
-	<div class="tcms">
-		<div class="title_tc">
-			<h3>1F&nbsp;特产美食</h3>
-			<div class="tip_tc">
-				<em>&nbsp;</em>
-				<span><a href="#">精挑细选</a></span>
-			</div>
-		</div>
-		<div class="hot_tc">
-			<div class="hot_tc_top">
-				<div class="hot_tc_top_list">
-				</div>
-				<script type="text/html" id="hot_list_title_temp">
-					{{each list curr}}
-					<a href="#">{{curr.title}}</a>
-					{{/each}}
-				</script>
-				
-			</div>
-			<div class="hot_tc_foot">
-				<a href="#">
-					<img src="img/tctg.jpg" />
-				</a>
-			</div>
-		</div>
-		<!--商品-->
-		<div class="product_tc" id="product_tc_one">	
-		</div>
-		<script type="text/html" id="product_list_temp">
-			{{each list prod}}
-				<div class="product_tc_list">
-					<a href="#">
-						<img src="{{prod.img}}" />
-					</a>
-					<p class="title"><a href="#">
-						{{prod.title}}
-					</a></p>
-					<p class="price_del">{{prod.delprice}}</p>
-					<p class="price">{{prod.price}}</p>
-					<span class="add_car"></span>
-				</div>
-			{{/each}}
-		</script>
+	<!--商品列表-->
+	<div id="all_product">
 		
-		<div class="qiang_tc">
-			<a href="#"><img src="img/qianggou1.jpg" /></a>
-			<a href="#"><img src="img/qianggou2.jpg" /></a>
+			
+		<!--1F-->
+		<div class="tcms">
+			<div class="title_tc">
+				<h3>1F&nbsp;特产美食</h3>
+				<div class="tip_tc">
+					<em>&nbsp;</em>
+					<span><a href="#">精挑细选</a></span>
+				</div>
+			</div>
+			<div class="hot_tc">
+				<div class="hot_tc_top">
+					<div class="hot_tc_top_list">
+					</div>
+					<script type="text/html" id="hot_list_title_temp">
+						{{each list curr}}
+						<a href="#">{{curr.title}}</a>
+						{{/each}}
+					</script>
+					
+				</div>
+				<div class="hot_tc_foot">
+					<a href="#">
+						<img src="img/tctg.jpg" />
+					</a>
+				</div>
+			</div>
+			<!--商品-->
+			<div class="product_tc" id="product_tc_one">	
+			</div>
+			<script type="text/html" id="product_list_temp_1">
+				{{each list prod}}
+					<div class="product_tc_list">
+						<a href="#">
+							<img src="{{prod.img}}" />
+						</a>
+						<p class="title"><a href="#">
+							{{prod.title}}
+						</a></p>
+						<p class="price_del">{{prod.delprice}}</p>
+						<p class="price">{{prod.price}}</p>
+						<span class="add_car" id="add_Car"></span>
+					</div>
+				{{/each}}
+			</script>
+			
+			<div class="qiang_tc">
+				<a href="#"><img src="img/qianggou1.jpg" /></a>
+				<a href="#"><img src="img/qianggou2.jpg" /></a>
+			</div>
+		</div>
+	
+		
+		<!--2F-->
+		<div class="tcms">
+			<div class="title_tc">
+				<h3>2F&nbsp;滋补山珍</h3>
+				<div class="tip_tc">
+					<em>&nbsp;</em>
+					<span><a href="#">精挑细选</a></span>
+				</div>
+			</div>
+			<div class="hot_tc">
+				<div class="hot_tc_top">
+					<div class="hot_tc_top_list" id="hot_tc_top_list">
+					</div>
+					<script type="text/html" id="hot_list_title_temp">
+						{{each list curr}}
+						<a href="#">{{curr.title}}</a>
+						{{/each}}
+					</script>
+					
+				</div>
+				<div class="hot_tc_foot">
+					<a href="#">
+						<img src="img/2f.jpg" />
+					</a>
+				</div>
+			</div>
+			<!--商品-->
+			<div class="product_tc" id="product_tc_two">	
+			</div>
+			<script type="text/html" id="product_list_temp_2">
+				{{each list prod}}
+					<div class="product_tc_list">
+						<a href="#">
+							<img src="{{prod.img}}" />
+						</a>
+						<p class="title"><a href="#">
+							{{prod.title}}
+						</a></p>
+						<p class="price_del">{{prod.delprice}}</p>
+						<p class="price">{{prod.price}}</p>
+						<span class="add_car" id="add_Car"></span>
+					</div>
+				{{/each}}
+			</script>
+			
+			<div class="qiang_tc">
+				<a href="#"><img src="img/qianggou3.jpg" /></a>
+				<a href="#"><img src="img/qianggou4.jpg" /></a>
+			</div>
+		</div>
+		<!--3F-->
+		<div class="tcms">
+			<div class="title_tc">
+				<h3>3F&nbsp;饮品佳酿</h3>
+				<div class="tip_tc">
+					<em>&nbsp;</em>
+					<span><a href="#">精挑细选</a></span>
+				</div>
+			</div>
+			<div class="hot_tc">
+				<div class="hot_tc_top">
+					<div class="hot_tc_top_list" id="hot_tc_top_list">
+					</div>
+					<script type="text/html" id="hot_list_title_temp">
+						{{each list curr}}
+						<a href="#">{{curr.title}}</a>
+						{{/each}}
+					</script>
+					
+				</div>
+				<div class="hot_tc_foot">
+					<a href="#">
+						<img src="img/3f.jpg" />
+					</a>
+				</div>
+			</div>
+			<!--商品-->
+			<div class="product_tc" id="product_tc_three">	
+			</div>
+			<script type="text/html" id="product_list_temp_3">
+				{{each list prod}}
+					<div class="product_tc_list">
+						<a href="#">
+							<img src="{{prod.img}}" />
+						</a>
+						<p class="title"><a href="#">
+							{{prod.title}}
+						</a></p>
+						<p class="price_del">{{prod.delprice}}</p>
+						<p class="price">{{prod.price}}</p>
+						<span class="add_car" id="add_Car"></span>
+					</div>
+				{{/each}}
+			</script>
+			
+			<div class="qiang_tc">
+				<a href="#"><img src="img/qianggou5.jpg" /></a>
+				<a href="#"><img src="img/qianggou6.jpg" /></a>
+			</div>
+		</div>
+		<!--4F粮油米面-->
+		<div class="tcms">
+			<div class="title_tc">
+				<h3>4F&nbsp;粮油米面</h3>
+				<div class="tip_tc">
+					<em>&nbsp;</em>
+					<span><a href="#">精挑细选</a></span>
+				</div>
+			</div>
+			<div class="hot_tc">
+				<div class="hot_tc_top">
+					<div class="hot_tc_top_list" id="hot_tc_top_list">
+					</div>
+					<script type="text/html" id="hot_list_title_temp">
+						{{each list curr}}
+						<a href="#">{{curr.title}}</a>
+						{{/each}}
+					</script>
+					
+				</div>
+				<div class="hot_tc_foot">
+					<a href="#">
+						<img src="img/4f.jpg" />
+					</a>
+				</div>
+			</div>
+			<!--商品-->
+			<div class="product_tc" id="product_tc_four">	
+			</div>
+			<script type="text/html" id="product_list_temp_4">
+				{{each list prod}}
+					<div class="product_tc_list">
+						<a href="#">
+							<img src="{{prod.img}}" />
+						</a>
+						<p class="title"><a href="#">
+							{{prod.title}}
+						</a></p>
+						<p class="price_del">{{prod.delprice}}</p>
+						<p class="price">{{prod.price}}</p>
+						<span class="add_car" id="add_Car"></span>
+					</div>
+				{{/each}}
+			</script>
+			
+			<div class="qiang_tc">
+				<a href="#"><img src="img/qianggou7.jpg" /></a>
+				<a href="#"><img src="img/qianggou8.jpg" /></a>
+			</div>
+		</div>
+		<!--5F民族工艺-->
+		<div class="tcms">
+			<div class="title_tc">
+				<h3>5F&nbsp;民族工艺</h3>
+				<div class="tip_tc">
+					<em>&nbsp;</em>
+					<span><a href="#">精挑细选</a></span>
+				</div>
+			</div>
+			<div class="hot_tc">
+				<div class="hot_tc_top">
+					<div class="hot_tc_top_list" id="hot_tc_top_list">
+					</div>
+					<script type="text/html" id="hot_list_title_temp">
+						{{each list curr}}
+						<a href="#">{{curr.title}}</a>
+						{{/each}}
+					</script>
+					
+				</div>
+				<div class="hot_tc_foot">
+					<a href="#">
+						<img src="img/5f.jpg" />
+					</a>
+				</div>
+			</div>
+			<!--商品-->
+			<div class="product_tc" id="product_tc_five">	
+			</div>
+			<script type="text/html" id="product_list_temp_5">
+				{{each list prod}}
+					<div class="product_tc_list">
+						<a href="#">
+							<img src="{{prod.img}}" />
+						</a>
+						<p class="title"><a href="#">
+							{{prod.title}}
+						</a></p>
+						<p class="price_del">{{prod.delprice}}</p>
+						<p class="price">{{prod.price}}</p>
+						<span class="add_car" id="add_Car"></span>
+					</div>
+				{{/each}}
+			</script>
+			
+			<div class="qiang_tc">
+				<a href="#"><img src="img/qianggou9.jpg" /></a>
+				<a href="#"><img src="img/qianggou10.jpg" /></a>
+			</div>
 		</div>
 	</div>
-
-	
-	
-	
-	
-	
-	
-	<!--2F-->
-	<div class="tcms">
-		<div class="title_tc">
-			<h3>2F&nbsp;滋补山珍</h3>
-			<div class="tip_tc">
-				<em>&nbsp;</em>
-				<span><a href="#">精挑细选</a></span>
-			</div>
-		</div>
-		<div class="hot_tc">
-			<div class="hot_tc_top">
-				<div class="hot_tc_top_list" id="hot_tc_top_list">
-				</div>
-				<script type="text/html" id="hot_list_title_temp">
-					{{each list curr}}
-					<a href="#">{{curr.title}}</a>
-					{{/each}}
-				</script>
-				
-			</div>
-			<div class="hot_tc_foot">
-				<a href="#">
-					<img src="img/2f.jpg" />
-				</a>
-			</div>
-		</div>
-		<!--商品-->
-		<div class="product_tc" id="product_tc_one">	
-		</div>
-		<script type="text/html" id="product_list_temp">
-			{{each list prod}}
-				<div class="product_tc_list">
-					<a href="#">
-						<img src="{{prod.img}}" />
-					</a>
-					<p class="title"><a href="#">
-						{{prod.title}}
-					</a></p>
-					<p class="price_del">{{prod.delprice}}</p>
-					<p class="price">{{prod.price}}</p>
-					<span class="add_car"></span>
-				</div>
-			{{/each}}
-		</script>
-		
-		<div class="qiang_tc">
-			<a href="#"><img src="img/qianggou1.jpg" /></a>
-			<a href="#"><img src="img/qianggou2.jpg" /></a>
-		</div>
-	</div>
-	<!--3F-->
-	<div class="tcms">
-		<div class="title_tc">
-			<h3>3F&nbsp;饮品佳酿</h3>
-			<div class="tip_tc">
-				<em>&nbsp;</em>
-				<span><a href="#">精挑细选</a></span>
-			</div>
-		</div>
-		<div class="hot_tc">
-			<div class="hot_tc_top">
-				<div class="hot_tc_top_list" id="hot_tc_top_list">
-				</div>
-				<script type="text/html" id="hot_list_title_temp">
-					{{each list curr}}
-					<a href="#">{{curr.title}}</a>
-					{{/each}}
-				</script>
-				
-			</div>
-			<div class="hot_tc_foot">
-				<a href="#">
-					<img src="img/3f.jpg" />
-				</a>
-			</div>
-		</div>
-		<!--商品-->
-		<div class="product_tc" id="product_tc_one">	
-		</div>
-		<script type="text/html" id="product_list_temp">
-			{{each list prod}}
-				<div class="product_tc_list">
-					<a href="#">
-						<img src="{{prod.img}}" />
-					</a>
-					<p class="title"><a href="#">
-						{{prod.title}}
-					</a></p>
-					<p class="price_del">{{prod.delprice}}</p>
-					<p class="price">{{prod.price}}</p>
-					<span class="add_car"></span>
-				</div>
-			{{/each}}
-		</script>
-		
-		<div class="qiang_tc">
-			<a href="#"><img src="img/qianggou1.jpg" /></a>
-			<a href="#"><img src="img/qianggou2.jpg" /></a>
-		</div>
-	</div>
-	<!--4F粮油米面-->
-	<div class="tcms">
-		<div class="title_tc">
-			<h3>4F&nbsp;粮油米面</h3>
-			<div class="tip_tc">
-				<em>&nbsp;</em>
-				<span><a href="#">精挑细选</a></span>
-			</div>
-		</div>
-		<div class="hot_tc">
-			<div class="hot_tc_top">
-				<div class="hot_tc_top_list" id="hot_tc_top_list">
-				</div>
-				<script type="text/html" id="hot_list_title_temp">
-					{{each list curr}}
-					<a href="#">{{curr.title}}</a>
-					{{/each}}
-				</script>
-				
-			</div>
-			<div class="hot_tc_foot">
-				<a href="#">
-					<img src="img/4f.jpg" />
-				</a>
-			</div>
-		</div>
-		<!--商品-->
-		<div class="product_tc" id="product_tc_one">	
-		</div>
-		<script type="text/html" id="product_list_temp">
-			{{each list prod}}
-				<div class="product_tc_list">
-					<a href="#">
-						<img src="{{prod.img}}" />
-					</a>
-					<p class="title"><a href="#">
-						{{prod.title}}
-					</a></p>
-					<p class="price_del">{{prod.delprice}}</p>
-					<p class="price">{{prod.price}}</p>
-					<span class="add_car"></span>
-				</div>
-			{{/each}}
-		</script>
-		
-		<div class="qiang_tc">
-			<a href="#"><img src="img/qianggou1.jpg" /></a>
-			<a href="#"><img src="img/qianggou2.jpg" /></a>
-		</div>
-	</div>
-	<!--5F民族工艺-->
-	<div class="tcms">
-		<div class="title_tc">
-			<h3>5F&nbsp;民族工艺</h3>
-			<div class="tip_tc">
-				<em>&nbsp;</em>
-				<span><a href="#">精挑细选</a></span>
-			</div>
-		</div>
-		<div class="hot_tc">
-			<div class="hot_tc_top">
-				<div class="hot_tc_top_list" id="hot_tc_top_list">
-				</div>
-				<script type="text/html" id="hot_list_title_temp">
-					{{each list curr}}
-					<a href="#">{{curr.title}}</a>
-					{{/each}}
-				</script>
-				
-			</div>
-			<div class="hot_tc_foot">
-				<a href="#">
-					<img src="img/5f.jpg" />
-				</a>
-			</div>
-		</div>
-		<!--商品-->
-		<div class="product_tc" id="product_tc_one">	
-		</div>
-		<script type="text/html" id="product_list_temp">
-			{{each list prod}}
-				<div class="product_tc_list">
-					<a href="#">
-						<img src="{{prod.img}}" />
-					</a>
-					<p class="title"><a href="#">
-						{{prod.title}}
-					</a></p>
-					<p class="price_del">{{prod.delprice}}</p>
-					<p class="price">{{prod.price}}</p>
-					<span class="add_car"></span>
-				</div>
-			{{/each}}
-		</script>
-		
-		<div class="qiang_tc">
-			<a href="#"><img src="img/qianggou1.jpg" /></a>
-			<a href="#"><img src="img/qianggou2.jpg" /></a>
-		</div>
-	</div>
-	
 	
 	<!--
     	作者：offline
@@ -398,8 +321,7 @@
 	<script src="lib/jquery/jquery-1.12.4.min.js" type="text/javascript"></script>
 	<script src="lib/artTemplate/template-web.js" type="text/javascript"></script>
 	<script src="lib/requirejs/require.js" data-main ="js/index" type="text/javascript"></script>
-	<script src="lib/artTemplate/unslider.min.js" type="text/javascript" ></script>
-	<script src="lib/jquery-plugins/jquery.fly.min.js" type="text/javascript"></script>
-	
+	<script src="lib/artTemplate/unslider.min.js" type="text/javascript"></script>
+	<script src="lib/jquery-plugins/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

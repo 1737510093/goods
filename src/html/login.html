@@ -4,14 +4,14 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" type="text/css" href="../../dist/css/login.css"/>
-	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/css/login.css"/>
+	<title>登录</title>
 </head>
 <body>
 	
 	<div class="Logo-r">
 		<div class="Logo-info-r">
-		  <h1><img src="../img/logo.jpg"/></h1>
+		  <h1><a href="../index.html"><img src="../img/logo.jpg"/></a></h1>
 		  <h2>欢迎登录</h2>
 		  <div class="link_con">
 		  	<a href="#" class="qq" ></a> 
@@ -28,19 +28,23 @@
 	<div class="login_over">
 		<div class="login_inner">
 			<div class="login_banner">
-				<img src="../img/loginPic.jpg" />
+				<a href="../index.html"><img src="../img/loginPic.jpg" /></a>
 			</div>
+			
 			<div class="login_form">
-				<form method="podt" action="" onsubmit="return false">
-					<h2>还没有账号？<a href="#">立即注册</a></h2>
+				<h2>还没有账号？<a href="register.html" target="_blank">立即注册</a></h2>
+				<form method="post" action="" onsubmit="return false">
+					
 					<div class="person_inner">
 						<section>
 							<span>用户名</span>
-							<input type="text" placeholder="手机号/用户名/邮箱"/>
+							<input id="login_phone" type="text" placeholder="手机号/用户名/邮箱"/>
+							<span id="login_info"></span>
 						</section>
 						<section>
 							<span>密码</span>
-							<input type="password" />
+							<input id="login_pwd" type="password" />
+							<span id="password_info"></span>
 						</section>
 						<div class="login_remenber">
 							<label for="remenber"><input type="checkbox" id="remenber"/>请保存我这次的登录信息。</label>
@@ -49,17 +53,45 @@
 						<input class="login" type="submit" value="立即登录" />
 					</div>
 					<div class="link_out">
-						<a href="#">微信</a>
-						<a href="#">QQ</a>
-						<a href="#">新浪</a>
-						<a href="#">支付宝</a>
+						<a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxdeb0ef242c79f470&response_type=code&scope=snsapi_login&state=c033363f2ba6861df06cf9b174721bb2&redirect_uri=http%3A%2F%2Fwww.brsc.shop%2Fuser.php%3Fact%3Doath_login%26type%3Dweixin%26callblock%3Dhttp%253A%252F%252Fwww.brsc.shop%252Findex.php%26open%3D0">
+							<i></i>微信</a>
+						<a target="_blank" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=101412991&redirect_uri=http%3A%2F%2Fwww.brsc.shop%2Fuser.php%3Fact%3Doath_login%26type%3Dqq%26callblock%3Dhttp%253A%252F%252Fwww.brsc.shop%252Findex.php%26open%3D0&response_type=code&scope=get_user_info">
+							<i></i>QQ</a>
+						<a target="_blank" href="https://api.weibo.com/oauth2/authorize?client_id=2713906720+&redirect_uri=http%3A%2F%2Fwww.brsc.shop%2Fuser.php%3Fact%3Doath_login%26type%3Dweibo%26callblock%3Dhttp%253A%252F%252Fwww.brsc.shop%252Findex.php%26open%3D0&response_type=code&display=popup">
+							<i></i>新浪</a>
+						<a target="_blank" href="https://mapi.alipay.com/gateway.do?_input_charset=utf-8&partner=2088421704894120&return_url=http%3A%2F%2Fwww.brsc.shop%2Fuser.php%3Fact%3Doath_login%26type%3Dalipay%26callblock%3Dhttp%253A%252F%252Fwww.brsc.shop%252Findex.php%26open%3D0%26time%3D1530178874&service=alipay.auth.authorize&target_service=user.auth.quick.login&sign=e522da17e00505393076c9d62abf7470&sign_type=MD5">
+							<i></i>支付宝</a>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+	<div class="login_bottom">
+		<div class="footer_bottom">
+			<p>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">商家入驻</a>
+				<a href="#">手机商城</a>
+				<a href="#">销售联盟</a>
+				<a href="#">帮助中心</a>
+				<span>ICP备案证书号:</span>
+				<a href="#">陕ICP备17000344号-1</a>
+			</p>
+			<p>
+				<a href="#">© 2015-2018 8睿商城 版权所有，并保留所有权利。</a>
+				<a href="#">陕西省汉中市西乡县发展路 </a>
+				<a href="#"> Tel: 400-853-7462</a>
+				<a href="#"> E-mail: 2682200541@qq.com</a>
+			</p>
+			<p>
+				<img src="../img/button_old_41.gif" />
+				<a href="#"> 2682200541</a>
+			</p>
+		</div>
+	</div>
 	
-	
-	
+	<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

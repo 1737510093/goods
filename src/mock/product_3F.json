@@ -1,0 +1,16 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"img":"img/3f_1.jpg", "title":"八睿商城南山茶业汉中仙毫铁盒组合一级款128g", "delprice":"273.00", "price":"228.00"},
+				{"img":"img/3f_2.jpg", "title":"八睿商城南山茶业汉中仙毫铁盒组合特级款128g", "delprice":"403.00", "price":"336.00"},
+				{"img":"img/3f_3.jpg", "title":"八睿商城南山茶业汉中仙毫铁盒组合精品款128g", "delprice":"475.00", "price":"396.00"},
+				{"img":"img/3f_4.jpg", "title":"八睿商城南山茶业汉中仙毫礼品组合一级款256g", "delprice":"612.00", "price":"510.00"},
+				{"img":"img/3f_5.jpg", "title":"八睿商城南山茶业汉中仙毫礼品组合精品款216g", "delprice":"885.00", "price":"738.00"},
+				{"img":"img/3f_6.jpg", "title":"八睿商城南山茶业南山红茶精品款礼盒装128g", "delprice":"444.00", "price":"370.00"},
+				{"img":"img/3f_7.jpg", "title":"八睿商城南山茶业汉中仙毫精品款礼品组合128g", "delprice":"525.00", "price":"438.00"},
+				{"img":"img/3f_8.jpg", "title":"八睿商城南山茶业汉中仙毫木质组合特级款208g", "delprice":"2395.00", "price":"1996.00"}
+		]
+	}
+}		

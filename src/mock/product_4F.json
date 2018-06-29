@@ -1,0 +1,17 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"img":"img/like1.jpg", "title":"八睿商城 永康粮油大豆油", "delprice":"93.00", "price":"78.00"},
+				{"img":"img/like2.jpg", "title":"八睿商城 永康粮油福龙香粮油", "delprice":"84.00", "price":"70.00"},
+				{"img":"img/like3.jpg", "title":"八睿商城 永康粮油汉晶菜籽油", "delprice":"66.00", "price":"55.00"},
+				{"img":"img/like4.jpg", "title":"八睿商城 永康粮油黄池贡米", "delprice":"72.00", "price":"60.00"},
+				{"img":"img/like5.jpg", "title":"八睿商城 永康粮油汉鑫源压榨菜籽油", "delprice":"69.00", "price":"58.00"},
+				{"img":"img/like6.jpg", "title":"八睿商城 永康粮油黄池靓米10KG", "delprice":"52.00", "price":"44.00"},
+				{"img":"img/like7.jpg", "title":"八睿商城 永康粮油老牛面粉", "delprice":"56.00", "price":"47.00"},
+				{"img":"img/like8.jpg", "title":"八睿商城 永康粮油鲤鱼菜籽油5L", "delprice":"64.00", "price":"55.00"}
+				
+		]
+	}
+}		

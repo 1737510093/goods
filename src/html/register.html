@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="/css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+	<title>注册</title>
+</head>
+<body>
+	
+	<div class="Logo-r">
+		<div class="Logo-info-r">
+		  <h1><a href="../index.html"><img src="../img/logo.jpg"/></a></h1>
+		  <h2>欢迎注册</h2>
+		  <div class="link_con">
+		  	<a href="#" class="qq" ></a> 
+			<a href="#" class="sina"></a> 
+			<span href="javascript:void(0)" class="weixin">
+				<div class="erweima" id="erweima">
+				<img alt="微信" src="../img/weixin3.png" width="167" height="202">
+				</div>	
+			</span>
+			
+		  </div>
+	  </div>
+	</div>
+	<div class="login_over">
+		<div class="login_inner">
+			<div class="login_banner">
+				<a href="../index.html"><img src="../img/loginPic.jpg" /></a>
+			</div>
+			
+			<div class="register_form">
+				<div class="tip">
+					<span id="phone_register" class="phone_register">手机注册</span>
+					<span id="email_register" class="email_register">邮箱注册</span>
+					<span id="login_register" class="login_register">已有账号！<a href="login.html">登录</a></span>
+				</div>
+				<form method="post" action="" onsubmit="return false">
+					<div class="person_inner">
+						<div class="phone">
+							<input id="phone" type="text" placeholder="手机"/>
+							<input id="email" type="text" placeholder="email"/>
+							<i></i>
+							<span id="phone_info" class="phone_info"></span>
+						</div>
+						<div class="pwd">
+							<input id="pwd" type="password" placeholder="密码"/>
+							<i></i>
+							<section id="difficulty" class="difficulty">
+								<span id="s">弱</span>
+								<span id="m">中</span>
+								<span id="l">强</span>
+							</section>
+							<p id="pwd_info">好</p>
+						</div>
+							
+						<div class="Cpwd">
+							<input id="Cpwd" type="password" placeholder="确认密码"/>
+							<i></i>
+							<span id="pwd_Cpwd" class="pwd_Cpwd"></span>
+						</div>
+						<div class="print_code">
+							<input id="print" class="print" placeholder="手机验证码"/>
+							<input id="yan_email" class="yan_email" placeholder="邮箱验证码"/>
+							<i></i>
+							<input id="code" class="code" type="button" value="获取手机验证码"/>
+							<input id="email_code" class="email_code" type="button" value="获取邮箱验证码"/>
+						</div>
+							
+						<div class="login_remenber">
+							<label for="sure"><input type="checkbox" id="sure"/>我已看过并接受《
+								<a href="#">用户协议</a>
+								》
+							</label>
+							
+						</div>
+						<input class="register" type="submit" value="立即注册" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="login_bottom">
+		<div class="footer_bottom">
+			<p>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">商家入驻</a>
+				<a href="#">手机商城</a>
+				<a href="#">销售联盟</a>
+				<a href="#">帮助中心</a>
+				<span>ICP备案证书号:</span>
+				<a href="#">陕ICP备17000344号-1</a>
+			</p>
+			<p>
+				<a href="#">© 2015-2018 8睿商城 版权所有，并保留所有权利。</a>
+				<a href="#">陕西省汉中市西乡县发展路 </a>
+				<a href="#"> Tel: 400-853-7462</a>
+				<a href="#"> E-mail: 2682200541@qq.com</a>
+			</p>
+			<p>
+				<img src="../img/button_old_41.gif" />
+				<a href="#"> 2682200541</a>
+			</p>
+		</div>
+	</div>
+	<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>

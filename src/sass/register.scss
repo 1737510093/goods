@@ -1,0 +1,231 @@
+
+.login_over .login_inner .register_form{
+    width: 385px;
+    height: 454px;
+    background: white;
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    color: #666666;
+    animation:run_right 0.5s;
+    
+    .tip{
+        width:385px;
+        height: 32px;
+        padding-left: 3px;
+        z-index: 888;
+        position: absolute;
+        top: -31px;
+        span{
+            display: inline-block;
+            width:32.6% ;
+            height:30px ;
+            text-align: center;
+            line-height: 30px;
+            float: left;
+            background: white;
+        }
+        .phone_register{
+            color: #e4393c;
+            border-top:1px solid #ddd;
+            border-right:1px solid #ddd;
+            border-bottom:1px solid white;
+            border-left:1px solid #ddd;
+            
+        }
+        .email_register{
+            border-top:1px solid white;
+            border-right:1px solid white;
+            border-bottom:1px solid #ddd;
+            border-left:1px solid white;
+            
+        }
+        .login_register{
+            border-top:1px solid white;
+            border-right:1px solid white;
+            border-bottom:1px solid #ddd;
+            border-left:1px solid white;
+            a{
+                color:#e4393c;
+            }
+        }
+            
+            
+    }
+    form{
+        width: 300px;
+        height: auto;
+        min-height: 370px;
+        padding: 20px 40px;
+        border: 1px solid #ddd;
+        box-shadow: #ccc 0 0 5px;
+        float: right;
+        overflow: hidden;
+        .person_inner{
+            div{
+                height: 68px;
+                margin: 5px 0;
+                position:relative;
+                input{
+                    width: 258px;
+                    height: 16px;
+                    padding: 10px 5px 10px 30px;
+                }
+                input[type=text],input[type=password]{
+                    border: 1px solid #CCCCCC;  
+                }
+                i{
+                    position: absolute;
+                    width: 14px;
+                    height: 21px;
+                    top: 8px;
+                    left:10px;
+                    background: url(../img/register.png) no-repeat;
+                }
+            }
+            .phone{
+                #email{
+                    display: none;
+                }
+                i{
+                    background-position: -1px -50px;
+                }
+                .i_p{
+                    background-position: -1px -73px;
+                }
+                .phone_info{
+                    display: inline-block;
+                    height: 25px;
+                    line-height: 25px;
+                }
+                .phone_info_error{
+                     color:#e4393c;
+                }
+                .phone_info_success{
+                    color: forestgreen;
+                }
+            }
+            .pwd{
+                i{
+                    background-position: -1px -24px;
+                }
+                .difficulty{
+                    height: 30px;
+                    
+                    span{
+                        display: inline-block;
+                        width:32.4% ;
+                        height:30px ;
+                        text-align: center;
+                        line-height: 30px;
+                        float: left;
+                    }
+                    .s{
+                        border-bottom: 2px solid red;
+                    }
+                    .m{
+                        border-bottom: 2px solid orange;
+                    }
+                    .l{
+                        border-bottom: 2px solid limegreen;
+                    }
+                    
+                }
+                #pwd_info{
+                   display: none;
+                   display: inline-block;
+                   height:30px ;
+                   line-height: 30px;
+                   color:#e4393c; 
+                }
+            }
+            .Cpwd{
+                i{
+                    background-position: -1px -24px;
+                }
+                .pwd_Cpwd{
+                    display: inline-block;
+                    height: 25px;
+                    line-height: 25px;
+                }
+                .info_error{
+                     color:#e4393c;
+                }
+                .info_success{
+                    color: forestgreen;
+                }
+            }
+            .print_code{
+                text-align: center;
+                font-size: 12px;
+                i{
+                    background-position: -1px -50px;
+                }
+                .y_i{
+                     background-position: -1px -73px;
+                }
+                .print{
+                    width: 90px;
+                    height: 16px;
+                    float: left;
+                }
+                .yan_email{
+                    width: 90px;
+                    height: 16px;
+                    float: left;
+                    display: none;
+                }
+                .code{
+                    width: 110px;
+                    height: 40px;
+                    color: #FFF;
+                    background: #E4393C;
+                    text-align: center;
+                    line-height: 40px;
+                    border: none;
+                    float: left;
+                    padding: 0;
+                    margin-left: 10px;
+                    text-align: center;
+                    
+                }
+                .email_code{
+                    width: 110px;
+                    height: 40px;
+                    color: #FFF;
+                    background: #E4393C;
+                    text-align: center;
+                    line-height: 40px;
+                    border: none;
+                    float: left;
+                    padding: 0;
+                    margin-left: 10px;
+                    text-align: center;
+                    display: none;
+                }
+            }
+            .login_remenber{
+                height: 40px;
+                label{
+                    input{
+                        width: 13px;
+                        height: 13px;
+                    }
+                    a{
+                        
+                    }
+                }
+               
+            }
+            .register{
+                width: 300px;
+                height: 35px;
+                color: white;
+                background:#e4393c ;
+                border: none;
+                
+            }
+            
+        }
+    }
+}

@@ -1,7 +1,9 @@
-/*加载头部、尾部*/
-define(["jquery"],function($){
+define(["jquery"],function($){	
+	/*加载头部、尾部*/
 	$(".header").load("/html/include/header.html");
+	//加载尾部
 	$(".footer").load("/html/include/footer.html");
+	
 	//搜索框聚焦
 	$(function(){
 		//搜索关键字
@@ -24,8 +26,19 @@ define(["jquery"],function($){
 		});
 		
 		//导航栏下拉列表
-		$(".allMenu li").hover(function(){
-			$(this).find($(".menu_list")).slideToggle("fast");
-		});
+//		$(".allMenu li").hover(function(){
+//			$(this).find($(".menu_list")).slideToggle("fast");
+//		});
+	
+		
+		//侧边栏影藏元素动态展示
+//		$(".slide_nav").children("div").hover(function(){
+//			$(this).children("div").slideToggle("fast");
+//		})
+		
 	});
+	
 });
+	
+	
+

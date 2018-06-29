@@ -1,0 +1,16 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"img":"img/5f_1.jpg", "title":"八睿商城锦湖复古吉祥摆件财富节节高", "delprice":"432.00", "price":"360.00"},
+				{"img":"img/5f_2.jpg", "title":"八睿商城锦湖复古吉祥摆件莲年富足", "delprice":"432.00", "price":"360.00"},
+				{"img":"img/5f_3.jpg", "title":"八睿商城锦湖复古吉祥摆件玉兔生辉", "delprice":"391.00", "price":"326.00"},
+				{"img":"img/5f_4.jpg", "title":"八睿商城锦湖复古吉祥摆件摇钱树", "delprice":"345.00", "price":"288.00"},
+				{"img":"img/5f_5.jpg", "title":"八睿商城锦湖复古吉祥摆件聚宝盆", "delprice":"432.00", "price":"360.00"},
+				{"img":"img/5f_6.jpg", "title":"八睿商城锦湖复古吉祥摆件满揽富贵", "delprice":"828.00", "price":"690.00"},
+				{"img":"img/5f_7.jpg", "title":"八睿商城锦湖复古吉祥摆件招福纳财", "delprice":"1032.00", "price":"860.00"},
+				{"img":"img/5f_8.jpg", "title":"八睿商城锦湖复古吉祥摆件富甲天下", "delprice":"552.00", "price":"460.00"}
+		]
+	}
+}		
