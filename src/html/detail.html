@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/detail.css" />
+		<title>商品详情页</title>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="header"></header>
+		<div class="art">
+			<i></i>
+			<a href=".">首页</a>
+			<code>&gt;</code>
+			<a href="" style="">特产美食</a>
+			<code>&gt;</code> 八睿商城 新昊森林 山珍特产野生蓝莓果干 办公室零食 70g6盒
+		</div>
+
+		<!--商品详情-->
+
+		<div class="de_over">
+			<div class="de_nava">
+				<div class="goods_view">
+					<!--<div class="goods_img"></div>
+					<div class="fix_img">
+						<span class="scroll_left"></span>
+						<div class="gallery"></div>
+						<span class="scroll_right"></span>
+					</div>-->
+
+					<div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="../img/b1.jpg" src="../img/s1.jpg" /></span> </div>
+					<!--缩图开始-->
+					<div class="spec-scroll">
+						<a class="prev">&lt;</a>
+						<a class="next">&gt;</a>
+						<div class="items">
+							<ul>
+								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b3.jpg" src="../img/s3.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b3.jpg" src="../img/s3.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+							</ul>
+						</div>
+					</div>
+					<!--缩图结束-->
+					<!--查看大图-->
+					<div class="chakan">
+						<a href="">查看大图</a>
+					</div>
+					<!--分享-->
+					<div class="share" id="share">分享到</div>
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more"></a>
+						<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+						<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					</div>
+				</div>
+
+				<!--商品详细-->
+				<div class="goods_detail">
+					<h2>八睿商城 新昊森林  山珍特产野生蓝莓果干 办公室零食 70g6盒</h2>
+					<div class="summary-price">
+						<div class="show_price">
+							<span class="price">售价</span>
+							<strong class="p_price">300.00</strong>
+							<i>降价通知</i>
+						</div>
+						<div class="market_prices_tall">
+							<div class="market_prices">
+								<span>市场价</span>
+								<del>360.00</del>
+							</div>
+							<em>会员等级价格
+								<div class="rank_price">
+									<span class="rmbPrice"> 铜牌会员：285.00</span><br /> 
+	                    			<span class="rmbPrice"> 金牌会员：270.00</span> <br />
+	                    			<span class="rmbPrice"> 钻石会员：255.00</span>
+								</div>
+							
+							</em>
+							<i></i>
+
+						</div>
+					</div>
+					<!--商品货号-->
+					<p class="huohao">
+						<span>商品货号</span>
+						<span> BR006645 </span>
+					</p>
+					<ul class="qita">
+						<li>累积评价<span>0人评价</span></li>
+						<li>累计销量<span>0件</span></li>
+						<li style="border: none;">赠送积分<span>300</span></li>
+					</ul>
+					<div class="choose">
+						<span class="tip">所在区域：</span>
+						<div class="outer">
+							<select name="province" id="province">
+								<option value="请选择">请选择</option>
+							</select>
+							<select name="city" id="city">
+								<option value="请选择">请选择</option>
+							</select>
+							<select name="town" id="town">
+								<option value="请选择">请选择</option>
+							</select>
+						</div>
+						<div class="choose-amount">
+							<span class="tip">数量：</span>
+							<div class="amount">
+								<input type="button" id="amount_reduce" value="-" />
+								<input type="text" value="1"/>
+								<input type="button" id="amount_add" value="+" />
+							</div>
+							<div class="stock">
+								库存(<span>198</span>)
+							</div>
+						</div>
+					</div>
+					<!--立即购买-->
+					<div class="choose-btns">
+						<a class="u-buy1">立即购买</a>
+						<a class="u-buy2" id="buy2">加入购物车</a>
+						<a class="u-buy3">收藏</a>
+						<a class="u-buy4">去手机购买
+							<span></span>
+							<div class="phone_tan">
+								<img src="../img/w_mobile.png" />
+							</div>
+						</a>
+					</div>
+					<!--卖家：平台自营-->
+					<div class="supp_info">
+						<p>
+							<span>卖家：平台自营</span>
+						</p>
+						<p>
+							<em>商家名称</em>
+							<span>八睿商城</span>
+						</p>
+						<p>
+							<em>客服QQ</em>
+							<span><img src="../img/button_old_41.gif"/></span>
+						</p>
+						<p>
+							<em>客服旺旺</em>
+							<span></span>
+						</p>
+						<p>
+							<em>客服邮件</em>
+							<span>八睿商城</span>
+						</p>
+						<p>
+							<em>客服电话</em>
+							<span>2682200541@qq.com</span>
+						</p>
+						<p>
+							<em>所在地区</em>
+							<span>陕西省汉中市西乡县发展路</span>
+						</p>
+						<div class="attention-shop">
+							<span>扫一扫，手机访问微商城</span>
+							<img src="../img/w_mobile.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--推荐精品-->
+		<div class="goods_best">
+			<div class="mt">
+				<h2>推荐精品</h2>
+			</div>
+			<div class="colList">
+				<a id="btn-left1" class="prev" title="上一个" onclick=""><img src="../img/goods_best_l.png" /></a>
+				<div class="slider1 colFrame">
+					<ul>
+						
+					</ul>
+					<script type="text/html" id="tuijian_temp">
+						{{each list prod}}
+							<li>
+								<div class="p-img">
+									<a href="#" title="{{prod.title}}">
+										<img width="160" height="160" alt="{{prod.title}}" src="{{prod.img}}" />
+									</a>
+								</div>
+								<div class="rain-product-info">
+									<div class="p-price">
+										<strong class="best_goods_price">{{prod.price}}</strong>
+									</div>
+									<div class="rate">
+										<a href="#" title="{{prod.title}}">{{prod.title}}</a>
+									</div>
+								</div>
+							</li>
+						{{/each}}
+					</script>
+				</div>
+				<a id="btn-right1" class="next" title="下一个" onclick=""><img src="../img/goods_best_r.png" /></a>
+			</div>
+		</div>	
+		<!--规格参数-->
+		<div class="pro_size">
+			<!--最近上新-->
+			<div class="now_new">
+				<h2>最近上新</h2>
+				<ul>
+					<li>
+						<img src="../img/like1.jpg" />
+						<p class="new_title">八睿商城南山茶业汉中仙毫铁盒组合一级款128g</p>
+						<p class="new_price">228.00 </p>
+					</li>
+					<li>
+						<img src="../img/like2.jpg" />
+						<p class="new_title">八睿商城南山茶业汉中仙毫铁盒组合一级款128g</p>
+						<p class="new_price">228.00 </p>
+					</li>
+					<li>
+						<img src="../img/like3.jpg" />
+						<p class="new_title">八睿商城南山茶业汉中仙毫铁盒组合一级款128g</p>
+						<p class="new_price">228.00 </p>
+					</li>
+				</ul>
+			</div>
+			<!--参数、属性-->
+			<div class="attribute_over">
+				<!--标题-->
+				<div class="title">
+					<a href="#" class="h_list_1">规格参数</a>
+					<a href="#" class="h_list_2">商品介绍</a>
+					<a href="#" class="h_list_2">商品评价(0)</a>
+					<a href="#" class="h_list_2">售后保障</a>
+					<a href="#" class="h_list_3">加入购物车</a>
+				</div>
+				<!--内容详情-->
+				<div class="content_attr">
+					<ul class="detail-list">
+						<li>商品名称：八睿商城南山茶业汉中仙毫铁盒组合特级款128g</li>
+						<li>商品编号：HY001955</li>
+						<li>品牌：八睿商城</li>
+						<li>上架时间：2017-03-20</li>
+						<li>库存： 9</li>
+					</ul>
+					<div class="all_delimg" id="all_delimg">
+					</div>
+					<script type="text/html" id="detail_temp">
+						{{each list curr}}
+							<img src="{{curr.img}}"/>
+						{{/each}}
+					</script>
+				</div>
+				
+			</div>
+			<!--楼层-->
+			<div class="floor_attr">
+				<p><a href="#">规格参数</a></p>
+				<p><a href="#">产品介绍</a></p>
+				<p><a href="#">商品评价</a></p>
+				<p><a href="#">包装清单</a></p>
+				<p><a href="#">售后服务</a></p>
+				<p><a href="#">常见问题</a></p>
+			</div>
+		</div>
+		
+			<!--尾部-->
+		<footer class="footer"></footer>
+			<script>
+				window._bd_share_config = {
+					"common": {
+						"bdSnsKey": {},
+						"bdText": "",
+						"bdMini": "2",
+						"bdMiniList": false,
+						"bdPic": "",
+						"bdStyle": "0",
+						"bdSize": "16"
+					},
+					"share": {}
+				};
+				with(document) 0[(getElementById('share')).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+			</script>
+			
+			
+			<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../lib/chooseArea/area.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../lib/chooseArea/select.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../lib/requirejs/require.js" data-main="../js/detail" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

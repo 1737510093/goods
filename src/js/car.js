@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","template","fly","load"],function($){
+	require(["jquery","template","fly","load"],function($,template){
 		
 		$(function(){
 		//渲染购物车	

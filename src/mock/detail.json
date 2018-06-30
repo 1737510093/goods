@@ -1,0 +1,22 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"img":"../img/del_1.jpg"},
+				{"img":"../img/del_2.jpg"},
+				{"img":"../img/del_3.jpg"},
+				{"img":"../img/del_4.jpg"},
+				{"img":"../img/del_5.jpg"},
+				{"img":"../img/del_6.jpg"},
+				{"img":"../img/del_7.jpg"},
+				{"img":"../img/del_8.jpg"},
+				{"img":"../img/del_9.jpg"},
+				{"img":"../img/del_10.jpg"},
+				{"img":"../img/del_11.jpg"},
+				{"img":"../img/del_12.jpg"},
+				{"img":"../img/del_13.jpg"}
+		]
+	}
+}
+

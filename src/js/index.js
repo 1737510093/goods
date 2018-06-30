@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","fly","unslider","load"],function($){
+	require(["jquery","template","unslider","fly","load"],function($,template,fly,unslider,load){
 	
 
 //主页轮播图
