@@ -33,25 +33,26 @@
 						<span class="scroll_right"></span>
 					</div>-->
 
-					<div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="../img/b1.jpg" src="../img/s1.jpg" /></span> </div>
+					<div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="../img/b1.png" src="../img/s1.png" /></span> </div>
 					<!--缩图开始-->
 					<div class="spec-scroll">
 						<a class="prev">&lt;</a>
 						<a class="next">&gt;</a>
 						<div class="items">
 							<ul>
-								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b3.jpg" src="../img/s3.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b3.jpg" src="../img/s3.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/s1.jpg" onmousemove="preview(this);"></li>
-								<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/s2.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.png" src="../img/s1.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.png" src="../img/s2.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b3.png" src="../img/s3.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b4.png" src="../img/s4.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.png" src="../img/s1.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.png" src="../img/s2.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b3.png" src="../img/s3.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b4.png" src="../img/s4.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b1.png" src="../img/s1.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.png" src="../img/s2.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b3.png" src="../img/s3.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b4.png" src="../img/s4.png" onmousemove="preview(this);"></li>
+								<li><img alt="佳能" bimg="../img/b2.png" src="../img/s2.png" onmousemove="preview(this);"></li>
 							</ul>
 						</div>
 					</div>
@@ -239,17 +240,19 @@
 				</ul>
 			</div>
 			<!--参数、属性-->
-			<div class="attribute_over">
+			<div class="attribute_over" id="attribute_over">
 				<!--标题-->
-				<div class="title">
-					<a href="#" class="h_list_1">规格参数</a>
-					<a href="#" class="h_list_2">商品介绍</a>
-					<a href="#" class="h_list_2">商品评价(0)</a>
-					<a href="#" class="h_list_2">售后保障</a>
+				<div class="title" id="attribute_title">
+					<a href="#cp_attr" class="h_list_1">规格参数</a>
+					<a href="#cp_detail" class="h_list_2">商品介绍</a>
+					<a href="#cp_discuss" class="h_list_2">商品评价(0)</a>
+					<a href="#cp_realize" class="h_list_2">售后保障</a>
 					<a href="#" class="h_list_3">加入购物车</a>
 				</div>
 				<!--内容详情-->
 				<div class="content_attr">
+					<!--规格参数-->
+					<a name="cp_attr"></a><!--锚点-->
 					<ul class="detail-list">
 						<li>商品名称：八睿商城南山茶业汉中仙毫铁盒组合特级款128g</li>
 						<li>商品编号：HY001955</li>
@@ -257,25 +260,139 @@
 						<li>上架时间：2017-03-20</li>
 						<li>库存： 9</li>
 					</ul>
-					<div class="all_delimg" id="all_delimg">
-					</div>
+					
+					<!--商品介绍-->
+					<a name="cp_detail"></a><!--锚点-->
+					<div class="all_delimg" id="all_delimg"></div>
+					
 					<script type="text/html" id="detail_temp">
 						{{each list curr}}
 							<img src="{{curr.img}}"/>
 						{{/each}}
 					</script>
+					
+					<!--商品评价-->
+					<div class="all_discuss">
+						<a name="cp_discuss"></a><!--锚点-->
+						<h3>商品评价</h3>
+						<div class="goods_info_con">
+							<div class="baifenbi">0%<br />
+								<p>好评度</p>
+							</div>
+							<div class="range">
+								<p>
+									<span>好评(0%)</span>
+									<em></em>
+								</p>
+								<p>
+									<span>中评(0%)</span>
+									<em></em>
+								</p>
+								<p>
+									<span>差评(0%)</span>
+									<em></em>
+								</p>
+							</div>
+						</div>
+						<div class="my_comment_tab">
+							<ul>
+								<li id="mct_0">全部评价(0)</li>
+								<li id="mct_1">好评()</li>
+								<li id="mct_2">中评()</li>
+								<li id="mct_3">差评()</li>
+								<li id="mct_4">用户晒单()</li>
+								<li id="mct_5"></li>
+							</ul>
+						</div>
+						<div class="discuss_tab">
+							暂时还没有任何评论!
+						</div>
+						
+						<a name="del_list"></a>
+						<h3>包装清单</h3>
+						<div class="del_list">
+							<img src="../img/s-package.jpg" />
+						</div>
+						
+						<a name="cp_realize"></a><!--锚点-->
+						<h3>售后保障</h3>
+						<div class="sale_after">
+							<div class="one">
+								质保期：一年<br />
+								售后服务电话：0916-630-7288 品牌官方网站：http://http://116.62.46.0/<br />
+								售后服务电话：0916-630-7288<br />
+								品牌官方网站：http://http://116.62.46.0/<p>&nbsp;</p>
+								本商城向您保证所售商品均为正品行货，本商城自营商品自带机打发票，与商品一起寄送。
+								凭质保证书及本商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、
+								钟表由本商城联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的
+								质量保证。本商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！ <br /><br />
+								注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到
+								的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。
+								若本商城没有及时更新，请大家谅解!
+							</div>
+							<div class="two">
+								<p style="color:red">权利声明：</p>
+								本商城上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是鸿宇商城重要的经营资源，未经许可，禁止非法转载使用。
+								注：本站商品信息均来自于厂商，其真实性、准确性和合法性由信息拥有者（厂商）负责。本站不提供任何保证，并不承担任何法律责任。
+							</div>
+						</div>
+						<a name="question"></a>
+						<h3>常见问题</h3>
+						<div class="sale_question">
+							<p>
+								下单后可以修改订单吗？<br />
+								由本网站发货的订单，在订单打印之前可以修改，打开“订单详情”页面，点击右上角的“修改订单”即可，若没有修改订单按钮，则表示订单无法修改。
+								<span></span>
+							</p>
+							<p>
+								无货商品几天可以到货？<br />
+								您可以通过以下方法获取商品的到货时间：若商品页面中，显示“无货”时：商品具体的到货时间是无法确定的，您可以通过商品页面的“到货通知”功能获得商品到货提醒
+								<span></span>
+							</p>
+							<p>
+								订单如何取消？<br />
+								订单处于暂停状态，进入“我的订单"页面，找到要取消的订单，点击“取消订单”按钮。
+								<span></span>
+							</p>
+							<p>
+								可以开发票吗？<br />
+								本网站所售商品都是正品行货，均开具正规发票（图书商品用户自由选择是否开发票），发票金额含配送费金额，另有说明的除外。
+								<span></span>
+							</p>
+							<p>
+								如何联系商家？
+								在商品页面右则，您可以看到卖家信息，点击“联系客服”按钮，咨询卖家的在线客服人员，已开通400电话的卖家，您可直接致电卖家。
+								<span></span>
+							</p>
+							<p>
+								收到的商品少了/发错了怎么办？
+								同个订单购买多个商品可能会分为一个以上包裹发出，可能不会同时送达，建议您耐心等待1-2天，如未收到，本网站自营商品可直接联系鸿宇在线客服，第三方商家商品请联系商家在线客服。
+								<span></span>
+							</p>
+							<p>
+								退换货/维修需要多长时间？<br />
+								一般情况下，退货处理周期（不包含检测时间）：自接收到问题商品之日起 7 日之内为您处理完成，各支付方式退款时间请点击查阅退款多久可以到账；<br />
+								换货处理周期：自接收到问题商品之日起 15 日之内为您处理完成；<br />
+								正常维修处理周期：自接收到问题商品之日起 30 日内为您处理完成。
+								<span></span>
+							</p>
+							
+						</div>
+					</div>
+					
+					
 				</div>
-				
+				<!--楼层-->
+				<div class="floor_attr">
+					<p><a href="#cp_attr">规格参数</a></p>
+					<p><a href="#cp_detail">产品介绍</a></p>
+					<p><a href="#cp_discuss">商品评价</a></p>
+					<p><a href="#del_list">包装清单</a></p>
+					<p><a href="#cp_realize">售后服务</a></p>
+					<p><a href="#question">常见问题</a></p>
+				</div>
 			</div>
-			<!--楼层-->
-			<div class="floor_attr">
-				<p><a href="#">规格参数</a></p>
-				<p><a href="#">产品介绍</a></p>
-				<p><a href="#">商品评价</a></p>
-				<p><a href="#">包装清单</a></p>
-				<p><a href="#">售后服务</a></p>
-				<p><a href="#">常见问题</a></p>
-			</div>
+			
 		</div>
 		
 			<!--尾部-->

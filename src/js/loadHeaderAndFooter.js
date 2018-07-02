@@ -24,17 +24,7 @@ define(["jquery"],function($){
 			$(".index_search").val(txt);
 			$(".show_search").hide();
 		});
-		
-		//导航栏下拉列表
-//		$(".allMenu li").hover(function(){
-//			$(this).find($(".menu_list")).slideToggle("fast");
-//		});
-	
-		
-		//侧边栏影藏元素动态展示
-//		$(".slide_nav").children("div").hover(function(){
-//			$(this).children("div").slideToggle("fast");
-//		})
+
 		
 	});
 	

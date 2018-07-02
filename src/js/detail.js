@@ -41,7 +41,50 @@ require(["config"],function(){
 				const html = template("detail_temp",{list:data.res_body.list});
 				$("#all_delimg").prepend(html);
 			});
+			//窗口滚动超过商品详情导航条时固定定位在顶部
+			$(window).scroll(function(){
+				const wintop = document.documentElement.scrollTop;
+				const eletop = $(".attribute_over>.title").offset(top);
+				if(wintop>=1050){
+					$(".attribute_over>.title").css({"position":"fixed","top":"0"});
+					$(".floor_attr").css({"position":"fixed","top":"37px","right":"26px"});
+						$("a").removeClass("h_list_1");
+						$("a").addClass("h_list_2");
+					if(wintop>=1000 && wintop<1100){
+						
+						$("#attribute_title a:first-child").removeClass("h_list_2");
+						$("#attribute_title a:first-child").addClass("h_list_1");
+					}
+					if(wintop>=1100 && wintop<13200){
+						$("#attribute_title a:nth-of-type(2)").removeClass("h_list_2");
+						$("#attribute_title a:nth-of-type(2)").addClass("h_list_1");
+					}
+					if(wintop>=13200 && wintop<14200){
+						$("#attribute_title a:nth-of-type(3)").removeClass("h_list_2");
+						$("#attribute_title a:nth-of-type(3)").addClass("h_list_1");
+					}
+					if(wintop>=14200){
+						$("#attribute_title a:nth-of-type(4)").removeClass("h_list_2");
+						$("#attribute_title a:nth-of-type(4)").addClass("h_list_1");
+					}
+					
+				}
+				else{
+					$(".attribute_over>.title").css("position","static");
+					$(".floor_attr").css({"position":"absolute","top":"37px","right":"0"});
+				}
+			})
+			//点击商品详情标题改变样式
+			$("#attribute_title").delegate("a","click",function(){
+				$("a").removeClass("h_list_1");
+				$("a").addClass("h_list_2");
+				$(this).removeClass("h_list_2");
+				$(this).addClass("h_list_1");
+				
+			})
+			//
 		})
 	})
-})	
+})
+
 

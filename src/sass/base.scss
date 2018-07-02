@@ -719,7 +719,7 @@ body{
 .slide_nav .head_check{
     width: 35px;
     height: 47px;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
 }
 .slide_nav .head_check:hover .ask_check{
@@ -753,11 +753,12 @@ body{
     width: 160px;
     height: 130px;
     position: absolute;
-     right: 46px;
+    right: 46px;
     top: 0;
     background: white;
     border: 1px solid #E7E7E7;
     display: none;
+    margin-top:30px;
     box-shadow: -1px 2px 2px 0 rgba(0,0,0,0.08);
 }
 .slide_nav .head_check .ask_check p{
@@ -768,7 +769,7 @@ body{
     font-size: 16px;
 } 
 .slide_nav .car{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     height: 135px;
     width: 35px;
@@ -854,7 +855,7 @@ body{
     height: 45px;
     font-size: 12px;
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .slide_nav .select span{
     display: inline-block;
@@ -889,7 +890,7 @@ body{
     height: 45px;
     font-size: 12px;
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
     position: relative;
 }
 .slide_nav .wexin span{
@@ -945,4 +946,43 @@ body{
     color: #666666;
     font-size: 14px;
     text-align: center;
+}
+//回到顶部
+.slide_nav .to_top{
+    width: 35px;
+    height: 45px;
+    font-size: 12px;
+    color: white;
+    margin-top: 30px;
+}
+.slide_nav .to_top span{
+    display: inline-block;
+    text-align: center;
+}
+.slide_nav .to_top .show{
+    
+}
+.slide_nav .to_top .show i{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../img/site_bar.png) no-repeat 0 -165px;
+}
+.slide_nav .to_top:hover .show{
+     display: none;
+}
+.slide_nav .to_top:hover .hide{
+    display: block;
+    height: 45px;
+    margin-top: 20px;
+}
+.slide_nav .to_top:hover a .hide{
+  color: white;
+}
+
+.slide_nav .to_top .hide{
+    display:none;
+    background:#c40000;
+     padding: 8px 0;
+     line-height: 20px;
 }
