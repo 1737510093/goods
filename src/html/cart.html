@@ -61,17 +61,17 @@
 					<p class="ziying">网站自营</p>
 
 	
-					<table cellpadding="5" cellspacing="1" border=0 width="100%">
+					<table cellpadding="5" cellspacing="1" border=0 width="100%" id="car_good">
 						<tr>
-							<td align="center" width="5%"><input type="checkbox" autocomplete="off" name="sel_cartgoods[]" value="6125" id="sel_cartgoods_6125"></td>
+							<td align="center" width="5%"><input type="checkbox"></td>
 
 							<td align="center" width="40%">
 
 								<div class="thumb_name">
 									<dl>
-										<dt> <a href="#" target="_blank"><img src="../img/tctg1.jpg" border="0" title="八睿商城 新昊森林  山珍特产8 野生蓝莓果干（蜂蜜）  公司零食250g" /></a> </dt>
+										<dt> <a href="detail.html" target="_blank"><img src="../img/tctg1.jpg" border="0" title="八睿商城 新昊森林  山珍特产8 野生蓝莓果干（蜂蜜）  公司零食250g" /></a> </dt>
 										<dd>
-											<a href="#" target="_blank" class="f6">八睿商城 新昊森林 山珍特产8 野生蓝莓果干（蜂蜜） 公司零食250g</a>
+											<a href="detail.html" target="_blank" class="f6">八睿商城 新昊森林 山珍特产8 野生蓝莓果干（蜂蜜） 公司零食250g</a>
 											<br>
 											<font class="attrname"></font>
 
@@ -81,32 +81,33 @@
 
 							</td>
 							<td align=center width="15%">
-								<div class="jm_cartnum"> <span class="jmminu">-</span>
-									<input type="text" id="goods_number" value="1" size="4" class="jminputBg" />
-									<input type="hidden"  value="1">
-									<span class="jmadd" onclick=''>+</span> </div>
+								<div class="jm_cartnum">
+									<span class="jmminu">-</span>
+									<input type="text" value="1" size="4" class="jminputBg" />
+									<span class="jmadd" onclick=''>+</span> 
+								</div>
 
 							</td>
 							<td align="center" width="15%">
-								<font class="cart_jmprice" >88.00</font>
+								<font class="cart_jmprice dan" >88.00</font>
 							</td>
 							<td align="center" width="15%">
-								<font class="cart_jmprice" >88.00</font>
+								<font class="cart_jmprice zong" >88.00</font>
 							</td>
 							<td align="center" width="10%">
 								<a href="# " class="f6">删除</a>
 							</td>
 						</tr>
 						<tr>
-							<td align="center" width="5%"><input type="checkbox" autocomplete="off"></td>
+							<td align="center" width="5%"><input type="checkbox"></td>
 
 							<td align="center" width="40%">
 
 								<div class="thumb_name">
 									<dl>
-										<dt> <a href="#" target="_blank"><img src="../img/tctg1.jpg" border="0" title="八睿商城 新昊森林  山珍特产8 野生蓝莓果干（蜂蜜）  公司零食250g" /></a> </dt>
+										<dt> <a href="detail.html" target="_blank"><img src="../img/tctg2.jpg" border="0" title="八睿商城 新昊森林  山珍特产8 野生蓝莓果干（蜂蜜）  公司零食250g" /></a> </dt>
 										<dd>
-											<a href="#" target="_blank" class="f6">八睿商城 新昊森林 山珍特产8 野生蓝莓果干（蜂蜜） 公司零食250g</a>
+											<a href="detail.html" target="_blank" class="f6">八睿商城 新昊森林  山珍特产 野生蓝莓果干（白砂糖） 零食75gX6盒</a>
 											<br>
 											<font class="attrname"></font>
 
@@ -116,17 +117,18 @@
 
 							</td>
 							<td align=center width="15%">
-								<div class="jm_cartnum"> <span class="jmminu">-</span>
-									<input type="text" name="goods_number[6125]" id="goods_number_6125" value="1" size="4" class="jminputBg" />
-									<input type="hidden" id="hidden_6125" value="1">
-									<span class="jmadd" onclick=''>+</span> </div>
+								<div class="jm_cartnum">
+									<span class="jmminu">-</span>
+									<input type="text" value="1" size="4" class="jminputBg" />
+									<span class="jmadd" onclick=''>+</span> 
+								</div>
 
 							</td>
 							<td align="center" width="15%">
-								<font class="cart_jmprice" id="goods_price_6125">88.00</font>
+								<font class="cart_jmprice dan" >150.00</font>
 							</td>
 							<td align="center" width="15%">
-								<font class="cart_jmprice" id="subtotal_6125">88.00</font>
+								<font class="cart_jmprice zong" >150.00</font>
 							</td>
 							<td align="center" width="10%">
 								<a href="# " class="f6">删除</a>
@@ -143,7 +145,7 @@
 					<span class="jmclear" id=""/>清空购物车</span>
 					
 					<div id="cart_money_info"> 应付总额：
-						<span class="allprice">88.00</span>
+						<span class="allprice">00.00</span>
 					</div>
 					<input type="button" class="jmcheckout" id="" value="去结算"/>
 				</div>		
@@ -151,7 +153,7 @@
 			</div>
 			
 			<!--空-->
-			<div class="empty">
+			<div class="empty" style="display: none;">
 				购物车空空，快去
 				<a href="../index.html"> 添加商品 </a>吧！
 			</div>
@@ -174,10 +176,10 @@
 					{{each list prod}}
 						<li>
 							<p class="pic">
-								<a href="#" target="_blank"><img src="{{prod.img}}"></a>
+								<a href="detail.html" target="_blank"><img src="{{prod.img}}"></a>
 							</p>
 							<p class="name">
-								<a href="#" target="_blank">{{prod.title}}</a>
+								<a href="detail.html" target="_blank">{{prod.title}}</a>
 							</p>
 							<p class="price"><del style="color:#999">{{prod.delprice}}</del></p>
 							<p>
@@ -194,10 +196,10 @@
 					{{each list prod}}
 						<li>
 							<p class="pic">
-								<a href="#" target="_blank"><img src="{{prod.img}}"></a>
+								<a href="detail.html" target="_blank"><img src="{{prod.img}}"></a>
 							</p>
 							<p class="name">
-								<a href="#" target="_blank">{{prod.title}}</a>
+								<a href="detail.html" target="_blank">{{prod.title}}</a>
 							</p>
 							<p class="price"><del style="color:#999">{{prod.delprice}}</del></p>
 							<p>

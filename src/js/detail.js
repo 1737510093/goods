@@ -82,7 +82,31 @@ require(["config"],function(){
 				$(this).addClass("h_list_1");
 				
 			})
-			//
+			//数量加减
+			$("#amount_add").on("click",function(){
+				var count = $("#amount_show").val();
+				count++;
+				$("#amount_show").val(count);
+			})
+			$("#amount_reduce").on("click",function(){
+				var count = $("#amount_show").val();
+				count--;
+				if(count<1)
+				count=1;
+				$("#amount_show").val(count);
+			})
+			//数量输入框失去焦点
+			$("#amount_show").blur(function(){
+				var amount =parseInt($("#amount_show").val());
+				console.log(typeof amount);
+				if(amount<1){
+					$("#amount_show").val(1);
+				}
+				else{
+					$("#amount_show").val(amount);
+				}
+				
+			})
 		})
 	})
 })
